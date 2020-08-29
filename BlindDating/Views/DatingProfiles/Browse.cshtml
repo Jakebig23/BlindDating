@@ -11,11 +11,9 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstName)
+                @Html.DisplayNameFor(model => model.DisplayName)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.Age)
             </th>
@@ -34,11 +32,9 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
+                    @Html.DisplayFor(modelItem => item.DisplayName)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
+                
                 <td>
                     @Html.DisplayFor(modelItem => item.Age)
                 </td>

@@ -1,0 +1,37 @@
+﻿@model BlindDating.Models.MailMessage
+
+
+
+@{
+
+    ViewData["Title"] = "Read";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>Read</h2>
+
+<div>
+    <h4> MailMessages</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageTitle)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.MessageTitle)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageText)
+        </dt>
+        <dt style="width:auto">
+            @Html.DisplayFor(model => model.MessageText)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsRead)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.IsRead)
+        </dt>
+    </dl>
+</div>
